@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const mysql = require("mysql");
-const connection = require("./db/mysql2");
+const connection = require("./db/mysql");
 const bodyParser = require("body-parser");
 const router = express.Router();
 
