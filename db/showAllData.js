@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var mysqlDB = require('./mysql2');
+var mysqlDB = require('./mysql');
 
 router.get('/', function (req, res, next) {
     mysqlDB.query('select * from Persons', function (err, rows, fields) {
